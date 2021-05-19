@@ -1,7 +1,6 @@
 django
 sklearn
 pandas
-pickle
 xgboost
 nltk
 langdetect
