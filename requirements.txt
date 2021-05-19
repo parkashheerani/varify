@@ -2,9 +2,6 @@ django
 sklearn
 pandas
 xgboost
-wordnet
-pros_cons
-reuters
 nltk
 langdetect
 numpy
