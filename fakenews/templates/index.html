@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position : fixed;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      color:  rgb(0, 128, 0);
+    }
+  </style>
+</head>
+
+
+<body class="center" style="background-color:rgb(255,255,255); align-items: flex-start;
+; padding-top: 10>
+  <
+  <h1 style="color:rgb(0, 255 0); font-weight: 700;">
+     <i class="fas fa-ship"></i><h1>Fake News Detector</h1>
+  </h1>
+
+  <p>
+    <h2 style="color:rgb(255, 0, 0);"> کیا یہ خبر جعلی ہے؟ </h2>
+  </p>
+
+  <form action="result">
+    {% csrf_token %}
+
+    <div class="form-group" style=" align-items: flex-start;">
+      <textarea style="text-align:right;" class="form-control" id="text" name="news" rows="10" cols="100" placeholder="یہاں خبر درج کریں"> </textarea>
+    </div>
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</body>
+
+</html>
