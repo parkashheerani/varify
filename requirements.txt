@@ -5,3 +5,5 @@ xgboost
 nltk
 langdetect
 numpy
+whitenoise
+gunicorn
