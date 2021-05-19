@@ -1,4 +1,6 @@
 from nltk.util import everygrams
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 def grams(text):
     #Character grams
