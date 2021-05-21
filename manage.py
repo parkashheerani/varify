@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-#from grams import grams, everygrams
+from grams import grams, everygrams
 
 def main():
     """Run administrative tasks."""
