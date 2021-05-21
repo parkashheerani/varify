@@ -20,14 +20,6 @@ y = train['Target']
 X_test = test['News']
 y_test = test['Target']
 
-def grams(text):
-    #Character grams
-    for i in list(everygrams(''.join([c for c in text if c is not ' ']), min_len=1, max_len=4)):
-        yield i
-    #Word grams
-    for i in list(everygrams(text.split(' '), min_len=1, max_len=1)):
-        yield i
-
 XGB = XGBClassifier(colsample_bylevel = 0.1, colsample_bynode = 0.775, colsample_bytree = 0.325, learning_rate = 0.3,
 max_delta_step = 1, min_child_weight = 3, n_estimators = 400, reg_alpha = 5, reg_lambda = 1, subsample = 1.0
 )
