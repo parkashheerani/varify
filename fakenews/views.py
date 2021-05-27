@@ -8,7 +8,7 @@ def home(request):
     return render(request, 'index.html')
 
 def getPredictions(news):
-    model = pickle.load(open('ml_model.pkl', 'rb'))
+    model = pickle.load(open('ml_model.sav', 'rb'))
 
     prediction = model.predict([news])
 

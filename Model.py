@@ -10,7 +10,8 @@ from xgboost import XGBClassifier
 
 from sklearn.pipeline import Pipeline
 
-
+#import cloudpickle
+import dill
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 
@@ -31,4 +32,5 @@ model = Pipeline([('vector', vector),
                 ])
 model.fit(X, y)
 
-pickle.dump(model, open("ml_model.pkl", "wb"))
+#pickle.dump(model, open("ml_model.pkl", "wb"))
+dill.dump(model, open("ml_model.sav", "wb"))

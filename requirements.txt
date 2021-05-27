@@ -8,3 +8,4 @@ langdetect
 numpy
 whitenoise
 gunicorn
+dill
