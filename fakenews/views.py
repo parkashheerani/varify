@@ -2,6 +2,7 @@ from django.shortcuts import render
 import pickle
 from langdetect import detect
 from django.contrib import messages
+from grams import grams
 
 def home(request):
     return render(request, 'index.html')
