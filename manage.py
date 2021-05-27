@@ -5,6 +5,7 @@ import sys
 from grams import grams, everygrams
 
 def main():
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'varify.settings')
     try:
